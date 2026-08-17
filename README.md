@@ -2,17 +2,28 @@
 
 Static website untuk `bersulang.id` dan campaign single:
 
-**Thufail Al Ghifari — Tetap Berdiri**  
-Pasca Trilogi & Armorfatih  
+**Thufail Al Ghifari — Pasca Trilogi & Armorfatih**  
 Release Date: 11 September 2026
 
 ## Struktur File
 
 - `index.html` — halaman utama website
-- `styles.css` — styling responsive
+- `styles.css` — styling responsive dengan font stack Akzidenz Grotesk Next
 - `script.js` — mobile menu
 - `assets/` — favicon dan OG artwork placeholder
 - `press-kit/` — press release dan credits txt
+
+## Font
+
+Website memakai CSS font stack:
+
+```css
+font-family: "Akzidenz Grotesk Next", Arial, Helvetica, sans-serif;
+```
+
+File font mentah tidak disimpan di repo publik. Jika Akzidenz Grotesk Next terpasang di device pengunjung, browser akan memakainya. Jika tidak, browser fallback ke Arial/Helvetica.
+
+Untuk menampilkan Akzidenz ke semua pengunjung, gunakan webfont hanya jika lisensi web/public sudah aman.
 
 ## Cara Upload ke Hosting Biasa
 
@@ -23,11 +34,9 @@ Release Date: 11 September 2026
 
 ## Cara Deploy ke Vercel
 
-1. Buat repo GitHub baru, misalnya `bersulang-id`.
-2. Upload semua file ini.
-3. Import repo ke Vercel sebagai static site.
-4. Tambahkan domain `bersulang.id` di Vercel Project Settings > Domains.
-5. Arahkan DNS domain ke Vercel sesuai instruksi Vercel.
+1. Import repo ini ke Vercel sebagai static site.
+2. Tambahkan domain `bersulang.id` di Vercel Project Settings > Domains.
+3. Arahkan DNS domain ke Vercel sesuai instruksi Vercel.
 
 ## Yang Perlu Diganti Sebelum Launch
 
