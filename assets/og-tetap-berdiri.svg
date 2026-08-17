@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0b0b0a"/><stop offset="0.68" stop-color="#2a1713"/><stop offset="1" stop-color="#7a2b1f"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <circle cx="960" cy="120" r="80" fill="#d7a646" opacity="0.9"/>
+  <rect x="54" y="54" width="1092" height="522" rx="32" fill="none" stroke="#d7a646" opacity="0.35"/>
+  <text x="80" y="140" fill="#d7a646" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="6">BERSULANG RECORDS</text>
+  <text x="80" y="270" fill="#f5f0e8" font-family="Arial Black, Arial, sans-serif" font-size="94" font-weight="900">THUFAIL AL GHIFARI</text>
+  <text x="80" y="380" fill="#d7a646" font-family="Arial Black, Arial, sans-serif" font-size="112" font-weight="900">TETAP BERDIRI</text>
+  <text x="82" y="460" fill="#b8afa2" font-family="Arial, sans-serif" font-size="44">Pasca Trilogi &amp; Armorfatih</text>
+  <text x="82" y="530" fill="#f5f0e8" font-family="Arial, sans-serif" font-size="34" font-weight="700">11.09.2026</text>
+</svg>
