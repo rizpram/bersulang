@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+.vercel/
+
+# Local system files
+.DS_Store
+Thumbs.db
+
+# Do not commit raw font files unless web/public license is confirmed
+*.otf
+*.ttf
+*.woff
+*.woff2
