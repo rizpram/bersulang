@@ -1,0 +1,156 @@
+backend:
+  name: github
+  repo: rizpram/bersulang
+  branch: main
+  base_url: https://bersulang.id
+  auth_endpoint: api/auth
+  use_graphql: true
+
+site_url: https://bersulang.id
+display_url: https://bersulang.id
+logo_url: /assets/favicon.svg
+media_folder: assets/uploads
+public_folder: /assets/uploads
+locale: id
+
+collections:
+  - name: website
+    label: Website
+    files:
+      - name: site
+        label: Bersulang Site Content
+        file: content/site.json
+        format: json
+        fields:
+          - label: SEO
+            name: seo
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Browser Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Keywords, name: keywords, widget: string, required: false }
+              - { label: OG Title, name: ogTitle, widget: string, required: false }
+              - { label: OG Description, name: ogDescription, widget: text, required: false }
+              - { label: OG Image, name: ogImage, widget: image, required: false }
+
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Artist, name: artist, widget: string }
+              - { label: Main Title, name: title, widget: string }
+              - { label: Subline, name: subline, widget: string }
+              - { label: Release Date Line, name: releaseDateLine, widget: string }
+              - { label: Cover Title, name: coverTitle, widget: text, hint: "Use line breaks for cover-card layout." }
+              - { label: Cover Line, name: coverLine, widget: string, required: false }
+              - { label: Marquee Text, name: marquee, widget: text }
+
+          - label: Release
+            name: release
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Sound Direction, name: soundDirection, widget: text }
+              - { label: Quote, name: quote, widget: text }
+              - label: Credits
+                name: credits
+                widget: list
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: Value, name: value, widget: string }
+
+          - label: Smartlink
+            name: smartlink
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Note, name: note, widget: string }
+              - label: Platforms
+                name: platforms
+                widget: list
+                fields:
+                  - { label: Name, name: name, widget: string }
+                  - { label: Status, name: status, widget: string, required: false }
+                  - { label: URL, name: url, widget: string, required: false }
+
+          - label: Releases Catalog
+            name: releases
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Title, name: title, widget: string }
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - { label: Tag, name: tag, widget: string, required: false }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text, required: false }
+
+          - label: Artist
+            name: artist
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Name, name: name, widget: string }
+              - { label: Bio, name: bio, widget: text }
+              - label: Links
+                name: links
+                widget: list
+                required: false
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: URL, name: url, widget: string }
+
+          - label: Press Kit
+            name: pressKit
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: string }
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text }
+                  - { label: File URL, name: file, widget: string }
+                  - { label: CTA Label, name: cta, widget: string }
+
+          - label: Journal
+            name: journal
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Title, name: title, widget: string }
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text }
+                  - { label: URL, name: url, widget: string }
+
+          - label: Merch
+            name: merch
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: CTA Label, name: ctaLabel, widget: string }
+              - { label: CTA URL, name: ctaUrl, widget: string }
+
+          - label: Contact
+            name: contact
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Email, name: email, widget: string }
