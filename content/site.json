@@ -1,21 +1,45 @@
 {
-  "seo": {
-    "title": "Bersulang Records — Pasca Trilogi & Armorfatih",
-    "description": "Official home of Bersulang Records. Thufail Al Ghifari — Pasca Trilogi & Armorfatih, rilis 11 September 2026.",
-    "keywords": "Bersulang Records, Thufail Al Ghifari, Pasca Trilogi & Armorfatih, Tetap Berdiri, HipHop Indonesia, Underground HipHop, BoomBap",
-    "ogTitle": "Thufail Al Ghifari — Pasca Trilogi & Armorfatih",
-    "ogDescription": "Kubersumpah Tuk tetap berdiri. Rilis 11 September 2026 via Bersulang Records.",
-    "ogImage": "assets/og-tetap-berdiri.svg"
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Booking, press, licensing, collaboration",
+    "email": "hello@bersulang.id"
   },
-  "hero": {
-    "eyebrow": "Official release campaign",
-    "artist": "Thufail Al Ghifari",
-    "title": "Pasca Trilogi & Armorfatih",
-    "subline": "Kubersumpah Tuk tetap berdiri",
-    "releaseDateLine": "11.09.2026 · Bersulang Records",
-    "coverTitle": "PASCA\nTRILOGI &\nARMORFATIH",
-    "coverLine": "Kubersumpah Tuk tetap berdiri",
-    "marquee": "pasca trilogi & armorfatih · kubersumpah tuk tetap berdiri · tetap berdiri walau sendiri · bukan sekadar single, ini sumpah · "
+  "smartlink": {
+    "eyebrow": "Smartlink",
+    "title": "Listen everywhere",
+    "note": "Ganti link dummy ini setelah smartlink/pre-save final sudah tersedia.",
+    "platforms": [
+      {
+        "name": "Spotify",
+        "status": "Coming soon",
+        "url": "#"
+      },
+      {
+        "name": "Apple Music",
+        "status": "Coming soon",
+        "url": "#"
+      },
+      {
+        "name": "YouTube Music",
+        "status": "Coming soon",
+        "url": "#"
+      },
+      {
+        "name": "YouTube",
+        "status": "Coming soon",
+        "url": "#"
+      },
+      {
+        "name": "Deezer",
+        "status": "Coming soon",
+        "url": "#"
+      },
+      {
+        "name": "TikTok Sound",
+        "status": "Coming soon",
+        "url": "#"
+      }
+    ]
   },
   "release": {
     "eyebrow": "New single",
@@ -24,34 +48,26 @@
     "soundDirection": "Secara musikal, rilisan ini diarahkan sebagai real rap: flow ngobrol, berjalan sendiri, lalu perlahan naik menjadi sumpah. Underground hip-hop, boom bap, raw, reflektif, dan tidak dibuat terlalu pop.",
     "quote": "Kubersumpah Tuk tetap berdiri\ntetap berdiri walau sendiri.",
     "credits": [
-      { "label": "Written & Performed by", "value": "Thufail Al Ghifari" },
-      { "label": "Produced by", "value": "killjoy" },
-      { "label": "Mixed & Mastered by", "value": "killjoy" },
-      { "label": "Label / Collective", "value": "Bersulang Records" },
-      { "label": "Release Date", "value": "11 September 2026" }
-    ]
-  },
-  "smartlink": {
-    "eyebrow": "Smartlink",
-    "title": "Listen everywhere",
-    "note": "Ganti link dummy ini setelah smartlink/pre-save final sudah tersedia.",
-    "platforms": [
-      { "name": "Spotify", "status": "Coming soon", "url": "#" },
-      { "name": "Apple Music", "status": "Coming soon", "url": "#" },
-      { "name": "YouTube Music", "status": "Coming soon", "url": "#" },
-      { "name": "YouTube", "status": "Coming soon", "url": "#" },
-      { "name": "Deezer", "status": "Coming soon", "url": "#" },
-      { "name": "TikTok Sound", "status": "Coming soon", "url": "#" }
-    ]
-  },
-  "releases": {
-    "eyebrow": "Catalog",
-    "title": "Releases",
-    "items": [
-      { "tag": "2026 · Single", "title": "Pasca Trilogi & Armorfatih", "description": "The new oath from Thufail Al Ghifari: tetap berdiri walau sendiri." },
-      { "tag": "Album", "title": "Armorfatih", "description": "Archive page placeholder." },
-      { "tag": "Album", "title": "Dari Atas Satu Tanah Tempat Kita Berpijak", "description": "Archive page placeholder." },
-      { "tag": "Album", "title": "Jurnal Untuk Para Singa Tauhid", "description": "Archive page placeholder." }
+      {
+        "label": "Written & Performed by",
+        "value": "Thufail Al Ghifari"
+      },
+      {
+        "label": "Produced by",
+        "value": "killjoy"
+      },
+      {
+        "label": "Mixed & Mastered by",
+        "value": "killjoy"
+      },
+      {
+        "label": "Label / Collective",
+        "value": "Bersulang Records"
+      },
+      {
+        "label": "Release Date",
+        "value": "11 September 2026"
+      }
     ]
   },
   "artist": {
@@ -59,9 +75,44 @@
     "name": "Thufail Al Ghifari",
     "bio": "Rapper conscious hip-hop Indonesia dengan warna lirik reflektif, spiritual, dan penuh perlawanan. Bersama Bersulang Records, Pasca Trilogi & Armorfatih menjadi penanda fase baru setelah perjalanan trilogi dan era Armorfatih.",
     "links": [
-      { "label": "Discography", "url": "#smartlink" },
-      { "label": "Press Photos", "url": "#press" },
-      { "label": "Booking Inquiry", "url": "#contact" }
+      {
+        "label": "Discography",
+        "url": "#smartlink"
+      },
+      {
+        "label": "Press Photos",
+        "url": "#press"
+      },
+      {
+        "label": "Booking Inquiry",
+        "url": "#contact"
+      }
+    ]
+  },
+  "releases": {
+    "eyebrow": "Catalog",
+    "title": "Releases",
+    "items": [
+      {
+        "tag": "2026 · Single",
+        "title": "Pasca Trilogi & Armorfatih",
+        "description": "The new oath from Thufail Al Ghifari: tetap berdiri walau sendiri."
+      },
+      {
+        "tag": "Album",
+        "title": "Armorfatih",
+        "description": "Archive page placeholder."
+      },
+      {
+        "tag": "Album",
+        "title": "Dari Atas Satu Tanah Tempat Kita Berpijak",
+        "description": "Archive page placeholder."
+      },
+      {
+        "tag": "Album",
+        "title": "Jurnal Untuk Para Singa Tauhid",
+        "description": "Archive page placeholder."
+      }
     ]
   },
   "pressKit": {
@@ -69,19 +120,64 @@
     "title": "Press Kit",
     "description": "Materi resmi untuk media, komunitas, blog, dan promotor.",
     "items": [
-      { "title": "Press Release", "description": "Official release story, title, credits, and release date.", "file": "press-kit/press-release.txt", "cta": "Download TXT" },
-      { "title": "Credits", "description": "Official metadata for YouTube, DSP, and visual assets.", "file": "press-kit/credits.txt", "cta": "Download Credits" },
-      { "title": "Artwork", "description": "Temporary SVG cover and OG preview placeholder.", "file": "assets/og-tetap-berdiri.svg", "cta": "Download Artwork" }
+      {
+        "title": "Press Release",
+        "description": "Official release story, title, credits, and release date.",
+        "file": "press-kit/press-release.txt",
+        "cta": "Download TXT"
+      },
+      {
+        "title": "Credits",
+        "description": "Official metadata for YouTube, DSP, and visual assets.",
+        "file": "press-kit/credits.txt",
+        "cta": "Download Credits"
+      },
+      {
+        "title": "Artwork",
+        "description": "Temporary SVG cover and OG preview placeholder.",
+        "file": "assets/og-tetap-berdiri.svg",
+        "cta": "Download Artwork"
+      }
     ]
   },
   "journal": {
     "eyebrow": "Journal",
     "title": "Stories",
     "items": [
-      { "title": "Release Announcement", "description": "Thufail Al Ghifari — Pasca Trilogi & Armorfatih, 11 September 2026", "url": "#release" },
-      { "title": "Producer Note", "description": "Flow ngobrol, ruang untuk lirik, dan energi yang naik perlahan", "url": "#release" },
-      { "title": "Behind The Lyrics", "description": "Tetap berdiri walau sendiri sebagai inti emosional rilisan", "url": "#release" }
+      {
+        "title": "Release Announcement",
+        "description": "Thufail Al Ghifari — Pasca Trilogi & Armorfatih, 11 September 2026",
+        "url": "#release"
+      },
+      {
+        "title": "Producer Note",
+        "description": "Flow ngobrol, ruang untuk lirik, dan energi yang naik perlahan",
+        "url": "#release"
+      },
+      {
+        "title": "Behind The Lyrics",
+        "description": "Tetap berdiri walau sendiri sebagai inti emosional rilisan",
+        "url": "#release"
+      }
     ]
+  },
+  "hero": {
+    "eyebrow": "Official release campaign",
+    "artist": "Thufail Al Ghifari",
+    "title": "Pasca Trilogi & Armorfatih",
+    "subline": " ",
+    "releaseDateLine": "11.09.2026 · Bersulang Records",
+    "coverTitle": "PASCA\nTRILOGI &\nARMORFATIH",
+    "coverLine": "",
+    "marquee": "pasca trilogi & armorfatih · kubersumpah tuk tetap berdiri · tetap berdiri walau sendiri · bukan sekadar single, ini sumpah · "
+  },
+  "seo": {
+    "title": "Bersulang Records — Pasca Trilogi & Armorfatih",
+    "description": "Official home of Bersulang Records. Thufail Al Ghifari — Pasca Trilogi & Armorfatih, rilis 11 September 2026.",
+    "keywords": "Bersulang Records, Thufail Al Ghifari, Pasca Trilogi & Armorfatih, Tetap Berdiri, HipHop Indonesia, Underground HipHop, BoomBap",
+    "ogTitle": "Thufail Al Ghifari — Pasca Trilogi & Armorfatih",
+    "ogDescription": "Kubersumpah Tuk tetap berdiri. Rilis 11 September 2026 via Bersulang Records.",
+    "ogImage": "assets/og-tetap-berdiri.svg"
   },
   "merch": {
     "eyebrow": "Merch",
@@ -89,10 +185,5 @@
     "description": "Area merch Bersulang Records. Untuk fase awal, arahkan order ke WhatsApp atau form kontak. Nanti bisa ditambah katalog kaos, bundle, kaset/CD, dan limited drop.",
     "ctaLabel": "Merch / Order Inquiry",
     "ctaUrl": "#contact"
-  },
-  "contact": {
-    "eyebrow": "Contact",
-    "title": "Booking, press, licensing, collaboration",
-    "email": "hello@bersulang.id"
   }
 }
