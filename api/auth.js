@@ -11,18 +11,16 @@ module.exports = function handler(req, res) {
     return;
   }
 
-  const host = req.headers['x-forwarded-host'] || req.headers.host;
-  const proto = req.headers['x-forwarded-proto'] || 'https';
-  const origin = `${proto}://${host}`;
-  const redirectUri = process.env.GITHUB_REDIRECT_URI || `${origin}/api/callback`;
-  const scope = req.query.scope || 'repo,user';
-  const state = req.query.state || '';
+  const canonicalOrigin = 'https://www.bersulang.id';
+  const redirectUri = process.env.GITHUB_REDIRECT_URI || `${canonicalOrigin}/api/callback`;
+  const scope = req.query.scope || 'repo user';
+  const state = req.query.state || Math.random().toString(36).slice(2);
 
   const authUrl = new URL('https://github.com/login/oauth/authorize');
   authUrl.searchParams.set('client_id', clientId);
   authUrl.searchParams.set('redirect_uri', redirectUri);
   authUrl.searchParams.set('scope', scope);
-  if (state) authUrl.searchParams.set('state', state);
+  authUrl.searchParams.set('state', state);
 
   res.writeHead(302, { Location: authUrl.toString() });
   res.end();
