@@ -1,27 +1,33 @@
-function renderAuthResult(message) {
-  const safeMessage = JSON.stringify(message);
+function renderAuthResult(status, content) {
+  const message = `authorization:github:${status}:${JSON.stringify(content)}`;
   return `<!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Bersulang CMS Auth</title></head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bersulang CMS Auth</title>
+</head>
 <body style="font-family:system-ui;background:#0b0b0a;color:#f5f0e8;padding:32px">
   <p>Completing GitHub login...</p>
   <script>
     (function () {
-      var msg = ${safeMessage};
-      var done = false;
-      function send(targetOrigin) {
-        if (!window.opener || done) return;
-        done = true;
-        window.opener.postMessage(msg, targetOrigin || '*');
-        setTimeout(function () { window.close(); }, 300);
+      var message = ${JSON.stringify(message)};
+      var sent = false;
+      function sendToken(event) {
+        if (!window.opener || sent) return;
+        sent = true;
+        var targetOrigin = event && event.origin ? event.origin : '*';
+        window.opener.postMessage(message, targetOrigin);
+        window.removeEventListener('message', sendToken, false);
+        setTimeout(function () { window.close(); }, 500);
       }
-      function receiveMessage(event) {
-        send(event.origin || '*');
-        window.removeEventListener('message', receiveMessage, false);
+      window.addEventListener('message', sendToken, false);
+      if (window.opener) {
+        window.opener.postMessage('authorizing:github', '*');
       }
-      window.addEventListener('message', receiveMessage, false);
-      if (window.opener) window.opener.postMessage('authorizing:github', '*');
-      setTimeout(function () { send('*'); }, 1200);
+      setTimeout(function () {
+        if (!sent) sendToken({ origin: '*' });
+      }, 5000);
     })();
   </script>
 </body>
@@ -29,10 +35,9 @@ function renderAuthResult(message) {
 }
 
 function fail(res, message, statusCode = 400) {
-  const payload = `authorization:github:error:${JSON.stringify({ message })}`;
   res.statusCode = statusCode;
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
-  res.end(renderAuthResult(payload));
+  res.end(renderAuthResult('error', { message }));
 }
 
 async function isAllowedUser(token) {
@@ -64,10 +69,8 @@ module.exports = async function handler(req, res) {
   if (!code) return fail(res, 'Missing GitHub OAuth code.');
   if (!clientId || !clientSecret) return fail(res, 'Missing GITHUB_CLIENT_ID or GITHUB_CLIENT_SECRET env vars in Vercel.', 500);
 
-  const host = req.headers['x-forwarded-host'] || req.headers.host;
-  const proto = req.headers['x-forwarded-proto'] || 'https';
-  const origin = `${proto}://${host}`;
-  const redirectUri = process.env.GITHUB_REDIRECT_URI || `${origin}/api/callback`;
+  const canonicalOrigin = 'https://www.bersulang.id';
+  const redirectUri = process.env.GITHUB_REDIRECT_URI || `${canonicalOrigin}/api/callback`;
 
   const tokenResponse = await fetch('https://github.com/login/oauth/access_token', {
     method: 'POST',
@@ -92,12 +95,10 @@ module.exports = async function handler(req, res) {
   const allowed = await isAllowedUser(tokenData.access_token);
   if (!allowed) return fail(res, 'This GitHub user is not allowed to manage Bersulang CMS.', 403);
 
-  const payload = `authorization:github:success:${JSON.stringify({
-    token: tokenData.access_token,
-    provider: 'github'
-  })}`;
-
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
-  res.end(renderAuthResult(payload));
+  res.end(renderAuthResult('success', {
+    token: tokenData.access_token,
+    provider: 'github'
+  }));
 };
