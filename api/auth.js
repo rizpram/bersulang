@@ -12,7 +12,7 @@ module.exports = function handler(req, res) {
   }
 
   const canonicalOrigin = 'https://www.bersulang.id';
-  const redirectUri = process.env.GITHUB_REDIRECT_URI || `${canonicalOrigin}/api/callback`;
+  const redirectUri = `${canonicalOrigin}/api/callback`;
   const scope = req.query.scope || 'repo user';
   const state = req.query.state || Math.random().toString(36).slice(2);
 
