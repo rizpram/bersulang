@@ -2,12 +2,12 @@ backend:
   name: github
   repo: rizpram/bersulang
   branch: main
-  base_url: https://bersulang.id
+  base_url: https://www.bersulang.id
   auth_endpoint: api/auth
   use_graphql: true
 
-site_url: https://bersulang.id
-display_url: https://bersulang.id
+site_url: https://www.bersulang.id
+display_url: https://www.bersulang.id
 logo_url: /assets/favicon.svg
 media_folder: assets/uploads
 public_folder: /assets/uploads
