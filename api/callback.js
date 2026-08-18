@@ -70,7 +70,7 @@ module.exports = async function handler(req, res) {
   if (!clientId || !clientSecret) return fail(res, 'Missing GITHUB_CLIENT_ID or GITHUB_CLIENT_SECRET env vars in Vercel.', 500);
 
   const canonicalOrigin = 'https://www.bersulang.id';
-  const redirectUri = process.env.GITHUB_REDIRECT_URI || `${canonicalOrigin}/api/callback`;
+  const redirectUri = `${canonicalOrigin}/api/callback`;
 
   const tokenResponse = await fetch('https://github.com/login/oauth/access_token', {
     method: 'POST',
