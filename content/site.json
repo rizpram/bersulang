@@ -1,43 +1,43 @@
 {
   "contact": {
     "eyebrow": "Contact",
-    "title": "Booking, press, licensing, collaboration",
+    "title": "Booking, press, licensing, collaboration & general inquiries",
     "email": "hello@bersulang.id"
   },
   "smartlink": {
-    "eyebrow": "Smartlink",
-    "title": "Listen everywhere",
-    "note": "Ganti link dummy ini setelah smartlink/pre-save final sudah tersedia.",
+    "eyebrow": "Pre-save / Listen",
+    "title": "Pasca Trilogi & Armorfatih",
+    "note": "Available 11 September 2026. Streaming and pre-save links will be updated here as soon as they are live.",
     "platforms": [
       {
+        "name": "Pre-save / Release Updates",
+        "status": "Get notified",
+        "url": "#contact"
+      },
+      {
         "name": "Spotify",
-        "status": "Coming soon",
-        "url": "#"
+        "status": "Available on release day",
+        "url": "#release"
       },
       {
         "name": "Apple Music",
-        "status": "Coming soon",
-        "url": "#"
+        "status": "Available on release day",
+        "url": "#release"
       },
       {
         "name": "YouTube Music",
-        "status": "Coming soon",
-        "url": "#"
+        "status": "Available on release day",
+        "url": "#release"
       },
       {
         "name": "YouTube",
-        "status": "Coming soon",
-        "url": "#"
-      },
-      {
-        "name": "Deezer",
-        "status": "Coming soon",
-        "url": "#"
+        "status": "Video / visualizer link soon",
+        "url": "#press"
       },
       {
         "name": "TikTok Sound",
-        "status": "Coming soon",
-        "url": "#"
+        "status": "Available on release day",
+        "url": "#release"
       }
     ]
   },
@@ -77,7 +77,7 @@
     "links": [
       {
         "label": "Discography",
-        "url": "#smartlink"
+        "url": "#releases"
       },
       {
         "label": "Press Photos",
@@ -99,42 +99,42 @@
         "description": "The new oath from Thufail Al Ghifari: tetap berdiri walau sendiri."
       },
       {
-        "tag": "Album",
+        "tag": "Album · Archive",
         "title": "Armorfatih",
-        "description": "Archive page placeholder."
+        "description": "A key archive from Thufail Al Ghifari and Bersulang Records, rooted in conscious rap, spiritual reflection, and resistance."
       },
       {
-        "tag": "Album",
+        "tag": "Album · Archive",
         "title": "Dari Atas Satu Tanah Tempat Kita Berpijak",
-        "description": "Archive page placeholder."
+        "description": "Part of Thufail Al Ghifari's catalog journey: raw writing, grounded storytelling, and independent hip-hop documentation."
       },
       {
-        "tag": "Album",
+        "tag": "Album · Archive",
         "title": "Jurnal Untuk Para Singa Tauhid",
-        "description": "Archive page placeholder."
+        "description": "An archive title from the Thufail Al Ghifari discography, preserved as part of Bersulang Records' long-form music record."
       }
     ]
   },
   "pressKit": {
     "eyebrow": "Media Room",
     "title": "Press Kit",
-    "description": "Materi resmi untuk media, komunitas, blog, dan promotor.",
+    "description": "Materi resmi untuk media, komunitas, blog, promotor, dan collaborator.",
     "items": [
       {
         "title": "Press Release",
-        "description": "Official release story, title, credits, and release date.",
+        "description": "Official release story, title, credits, and release date for media coverage.",
         "file": "press-kit/press-release.txt",
-        "cta": "Download TXT"
+        "cta": "Download Press Release"
       },
       {
         "title": "Credits",
-        "description": "Official metadata for YouTube, DSP, and visual assets.",
+        "description": "Official metadata for YouTube, DSP, editorial listing, and visual assets.",
         "file": "press-kit/credits.txt",
         "cta": "Download Credits"
       },
       {
         "title": "Artwork",
-        "description": "Temporary SVG cover and OG preview placeholder.",
+        "description": "Official campaign artwork and social preview asset for Pasca Trilogi & Armorfatih.",
         "file": "assets/og-tetap-berdiri.svg",
         "cta": "Download Artwork"
       }
@@ -162,28 +162,28 @@
     ]
   },
   "hero": {
-    "eyebrow": "Official release ",
+    "eyebrow": "Official release campaign",
     "artist": "Thufail Al Ghifari",
     "title": "Pasca Trilogi & Armorfatih",
-    "subline": "   ",
+    "subline": "Kubersumpah Tuk tetap berdiri",
     "releaseDateLine": "11.09.2026 · Bersulang Records",
     "coverTitle": "PASCA\nTRILOGI &\nARMORFATIH",
-    "coverLine": "",
+    "coverLine": "Kubersumpah Tuk tetap berdiri",
     "marquee": "pasca trilogi & armorfatih · kubersumpah tuk tetap berdiri · tetap berdiri walau sendiri · bukan sekadar single, ini sumpah · "
   },
   "seo": {
-    "title": "Bersulang Records — Pasca Trilogi & Armorfatih",
-    "description": "Official home of Bersulang Records. Thufail Al Ghifari — Pasca Trilogi & Armorfatih, rilis 11 September 2026.",
-    "keywords": "Bersulang Records, Thufail Al Ghifari, Pasca Trilogi & Armorfatih, Tetap Berdiri, HipHop Indonesia, Underground HipHop, BoomBap",
+    "title": "Bersulang Records — Independent Hip-Hop & Raw Stories",
+    "description": "Official home of Bersulang Records: independent hip-hop, raw stories, release archive, press room, and artist catalog.",
+    "keywords": "Bersulang Records, Thufail Al Ghifari, Pasca Trilogi & Armorfatih, HipHop Indonesia, Underground HipHop, BoomBap, Independent Music",
     "ogTitle": "Thufail Al Ghifari — Pasca Trilogi & Armorfatih",
     "ogDescription": "Kubersumpah Tuk tetap berdiri. Rilis 11 September 2026 via Bersulang Records.",
     "ogImage": "assets/og-tetap-berdiri.svg"
   },
   "merch": {
     "eyebrow": "Merch",
-    "title": "Coming Soon",
-    "description": "Area merch Bersulang Records. Untuk fase awal, arahkan order ke WhatsApp atau form kontak. Nanti bisa ditambah katalog kaos, bundle, kaset/CD, dan limited drop.",
-    "ctaLabel": "Merch / Order Inquiry",
+    "title": "Drop 001 Coming Soon",
+    "description": "Pasca Trilogi Tee, poster, physical release bundle, and limited Bersulang Records drop are being prepared. Register interest through the contact form for release updates.",
+    "ctaLabel": "Notify Me",
     "ctaUrl": "#contact"
   }
 }
