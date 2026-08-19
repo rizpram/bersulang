@@ -38,6 +38,27 @@ function normalizeHref(value) {
   return value && String(value).trim() ? String(value).trim() : '#';
 }
 
+function isExternalHref(href) {
+  return /^https?:\/\//i.test(String(href || ''));
+}
+
+function dataEventName(prefix, value) {
+  return `${prefix}_${String(value || 'link').toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '')}`;
+}
+
+function trackEvent(eventName, params = {}) {
+  if (typeof window.gtag === 'function') window.gtag('event', eventName, params);
+}
+
+document.addEventListener('click', (event) => {
+  const tracked = event.target.closest('[data-event]');
+  if (!tracked) return;
+  trackEvent(tracked.getAttribute('data-event'), {
+    link_text: tracked.textContent.trim(),
+    link_url: tracked.getAttribute('href') || ''
+  });
+});
+
 async function loadCMSContent() {
   try {
     const response = await fetch('/content/site.json', { cache: 'no-store' });
@@ -114,11 +135,16 @@ function applySmartlinks(smartlink = {}) {
   const grid = $('#smartlink .link-grid');
   if (grid && Array.isArray(smartlink.platforms)) {
     grid.innerHTML = smartlink.platforms
-      .map((platform) => `
-        <a class="platform" href="${escapeHTML(normalizeHref(platform.url))}" target="_blank" rel="noopener">
-          <span>${escapeHTML(platform.name)}</span><small>${escapeHTML(platform.status || '')}</small>
-        </a>
-      `)
+      .map((platform) => {
+        const href = normalizeHref(platform.url);
+        const target = isExternalHref(href) ? ' target="_blank" rel="noopener"' : '';
+        const eventName = dataEventName('smartlink_click', platform.name);
+        return `
+          <a class="platform" href="${escapeHTML(href)}"${target} data-event="${escapeHTML(eventName)}">
+            <span>${escapeHTML(platform.name)}</span><small>${escapeHTML(platform.status || '')}</small>
+          </a>
+        `;
+      })
       .join('');
   }
 }
@@ -151,7 +177,7 @@ function applyArtist(artist = {}) {
   const buttons = $('#artist .button-list');
   if (buttons && Array.isArray(artist.links)) {
     buttons.innerHTML = artist.links
-      .map((link) => `<a href="${escapeHTML(normalizeHref(link.url))}">${escapeHTML(link.label)}</a>`)
+      .map((link) => `<a href="${escapeHTML(normalizeHref(link.url))}" data-event="${escapeHTML(dataEventName('artist_click', link.label))}">${escapeHTML(link.label)}</a>`)
       .join('');
   }
 }
@@ -167,7 +193,7 @@ function applyPressKit(pressKit = {}) {
         <div class="press-box">
           <h3>${escapeHTML(item.title || '')}</h3>
           <p>${escapeHTML(item.description || '')}</p>
-          <a href="${escapeHTML(normalizeHref(item.file))}" download>${escapeHTML(item.cta || 'Download')}</a>
+          <a href="${escapeHTML(normalizeHref(item.file))}" download data-event="${escapeHTML(dataEventName('presskit_download', item.title))}">${escapeHTML(item.cta || 'Download')}</a>
         </div>
       `)
       .join('');
@@ -181,7 +207,7 @@ function applyJournal(journal = {}) {
   if (list && Array.isArray(journal.items)) {
     list.innerHTML = journal.items
       .map((item) => `
-        <a href="${escapeHTML(normalizeHref(item.url))}">
+        <a href="${escapeHTML(normalizeHref(item.url))}" data-event="${escapeHTML(dataEventName('story_click', item.title))}">
           <span>${escapeHTML(item.title || '')}</span>
           <small>${escapeHTML(item.description || '')}</small>
         </a>
@@ -198,6 +224,7 @@ function applyMerch(merch = {}) {
   const link = $('#merch .content-block .btn');
   if (link && merch.ctaLabel) link.textContent = merch.ctaLabel;
   if (link && merch.ctaUrl) link.setAttribute('href', merch.ctaUrl);
+  if (link) link.setAttribute('data-event', 'merch_click');
 }
 
 function applyContact(contact = {}) {
