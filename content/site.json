@@ -7,8 +7,13 @@
   "smartlink": {
     "eyebrow": "Listen / Pre-save",
     "title": "Official HyperFollow",
-    "note": "Dengarkan dan simpan rilisan ini melalui smartlink resmi DistroKid / HyperFollow.",
+    "note": "Dengarkan, preview, dan simpan rilisan ini melalui smartlink resmi DistroKid / HyperFollow.",
     "platforms": [
+      {
+        "name": "Pre-listen",
+        "status": "Preview page",
+        "url": "/prelisten/"
+      },
       {
         "name": "Open HyperFollow",
         "status": "DistroKid official link",
@@ -67,6 +72,10 @@
       {
         "label": "Release Date",
         "value": "11 September 2026"
+      },
+      {
+        "label": "Smartlink",
+        "value": "https://distrokid.com/hyperfollow/thufailalghifari/pasca-trilogi--armorfatih"
       }
     ]
   },
@@ -169,7 +178,7 @@
     "releaseDateLine": "11.09.2026 · Bersulang Records",
     "coverTitle": "PASCA\nTRILOGI &\nARMORFATIH",
     "coverLine": "Kubersumpah Tuk tetap berdiri",
-    "marquee": "pasca trilogi & armorfatih · listen / pre-save now · kubersumpah tuk tetap berdiri · tetap berdiri walau sendiri · "
+    "marquee": "pasca trilogi & armorfatih · pre-listen now · listen / pre-save now · kubersumpah tuk tetap berdiri · "
   },
   "seo": {
     "title": "Bersulang Records — Pasca Trilogi & Armorfatih",
@@ -177,7 +186,7 @@
     "keywords": "Bersulang Records, Thufail Al Ghifari, Pasca Trilogi & Armorfatih, HipHop Indonesia, Underground HipHop, BoomBap, Independent Music",
     "ogTitle": "Thufail Al Ghifari — Pasca Trilogi & Armorfatih",
     "ogDescription": "Official release by Thufail Al Ghifari via Bersulang Records. Listen / pre-save now.",
-    "ogImage": "https://www.bersulang.id/assets/cover-pasca-trilogi-armorfatih.svg"
+    "ogImage": "assets/cover-pasca-trilogi-armorfatih.svg"
   },
   "merch": {
     "eyebrow": "Merch",
