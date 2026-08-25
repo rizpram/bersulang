@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 3000" role="img" aria-labelledby="title desc">
+  <title id="title">Thufail Al Ghifari — Pasca Trilogi &amp; Armorfatih cover</title>
+  <desc id="desc">Minimal black and white ALGHIFARI cover artwork with inverted triangle mark and Pasca Trilogi &amp; Armorfatih title.</desc>
+  <rect width="3000" height="3000" fill="#f8f8f5"/>
+  <g fill="#000000" text-anchor="middle" font-family="Arial Black, Helvetica, Arial, sans-serif">
+    <text x="1500" y="520" font-size="170" font-weight="900" letter-spacing="-6">ALGHIFARI</text>
+    <polygon points="985,600 2015,600 1500,1575"/>
+    <g transform="translate(0,0)" font-weight="900" letter-spacing="34">
+      <text x="740" y="2135" font-size="180">PASCA</text>
+      <text x="790" y="2345" font-size="180">TRILOGI</text>
+      <text x="1785" y="2345" font-size="180">&amp;</text>
+      <text x="1510" y="2555" font-size="180" letter-spacing="18">ARMORFATIH</text>
+    </g>
+  </g>
+</svg>
