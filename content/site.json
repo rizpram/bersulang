@@ -5,39 +5,39 @@
     "email": "hello@bersulang.id"
   },
   "smartlink": {
-    "eyebrow": "Pre-save / Listen",
-    "title": "Pasca Trilogi & Armorfatih",
-    "note": "Available 11 September 2026. Streaming and pre-save links will be updated here as soon as they are live.",
+    "eyebrow": "Listen / Pre-save",
+    "title": "Official HyperFollow",
+    "note": "Dengarkan dan simpan rilisan ini melalui smartlink resmi DistroKid / HyperFollow.",
     "platforms": [
       {
-        "name": "Pre-save / Release Updates",
-        "status": "Get notified",
-        "url": "#contact"
+        "name": "Open HyperFollow",
+        "status": "DistroKid official link",
+        "url": "https://distrokid.com/hyperfollow/thufailalghifari/pasca-trilogi--armorfatih"
       },
       {
         "name": "Spotify",
-        "status": "Available on release day",
-        "url": "#release"
+        "status": "Via HyperFollow",
+        "url": "https://distrokid.com/hyperfollow/thufailalghifari/pasca-trilogi--armorfatih"
       },
       {
         "name": "Apple Music",
-        "status": "Available on release day",
-        "url": "#release"
+        "status": "Via HyperFollow",
+        "url": "https://distrokid.com/hyperfollow/thufailalghifari/pasca-trilogi--armorfatih"
       },
       {
         "name": "YouTube Music",
-        "status": "Available on release day",
-        "url": "#release"
+        "status": "Via HyperFollow",
+        "url": "https://distrokid.com/hyperfollow/thufailalghifari/pasca-trilogi--armorfatih"
       },
       {
         "name": "YouTube",
-        "status": "Video / visualizer link soon",
-        "url": "#press"
+        "status": "Via HyperFollow",
+        "url": "https://distrokid.com/hyperfollow/thufailalghifari/pasca-trilogi--armorfatih"
       },
       {
         "name": "TikTok Sound",
-        "status": "Available on release day",
-        "url": "#release"
+        "status": "Via HyperFollow",
+        "url": "https://distrokid.com/hyperfollow/thufailalghifari/pasca-trilogi--armorfatih"
       }
     ]
   },
@@ -135,7 +135,7 @@
       {
         "title": "Artwork",
         "description": "Official campaign artwork and social preview asset for Pasca Trilogi & Armorfatih.",
-        "file": "assets/og-tetap-berdiri.svg",
+        "file": "assets/cover-pasca-trilogi-armorfatih.svg",
         "cta": "Download Artwork"
       }
     ]
@@ -169,15 +169,15 @@
     "releaseDateLine": "11.09.2026 · Bersulang Records",
     "coverTitle": "PASCA\nTRILOGI &\nARMORFATIH",
     "coverLine": "Kubersumpah Tuk tetap berdiri",
-    "marquee": "pasca trilogi & armorfatih · kubersumpah tuk tetap berdiri · tetap berdiri walau sendiri · bukan sekadar single, ini sumpah · "
+    "marquee": "pasca trilogi & armorfatih · listen / pre-save now · kubersumpah tuk tetap berdiri · tetap berdiri walau sendiri · "
   },
   "seo": {
-    "title": "Bersulang Records — Independent Hip-Hop & Raw Stories",
-    "description": "Official home of Bersulang Records: independent hip-hop, raw stories, release archive, press room, and artist catalog.",
+    "title": "Bersulang Records — Pasca Trilogi & Armorfatih",
+    "description": "Official home of Bersulang Records. Thufail Al Ghifari — Pasca Trilogi & Armorfatih. Listen and pre-save via official HyperFollow.",
     "keywords": "Bersulang Records, Thufail Al Ghifari, Pasca Trilogi & Armorfatih, HipHop Indonesia, Underground HipHop, BoomBap, Independent Music",
     "ogTitle": "Thufail Al Ghifari — Pasca Trilogi & Armorfatih",
-    "ogDescription": "Kubersumpah Tuk tetap berdiri. Rilis 11 September 2026 via Bersulang Records.",
-    "ogImage": "assets/og-tetap-berdiri.svg"
+    "ogDescription": "Official release by Thufail Al Ghifari via Bersulang Records. Listen / pre-save now.",
+    "ogImage": "https://www.bersulang.id/assets/cover-pasca-trilogi-armorfatih.svg"
   },
   "merch": {
     "eyebrow": "Merch",
