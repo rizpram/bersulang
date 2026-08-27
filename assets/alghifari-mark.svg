@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">ALGHIFARI mark</title>
+  <desc id="desc">Bold ALGHIFARI wordmark above an inverted triangle.</desc>
+  <rect width="720" height="360" fill="none"/>
+  <g fill="#fff" text-anchor="middle" font-family="Arial Black, Helvetica, Arial, sans-serif">
+    <text x="360" y="86" font-size="70" font-weight="900" letter-spacing="-2">ALGHIFARI</text>
+    <polygon points="148,105 572,105 360,330"/>
+  </g>
+</svg>
